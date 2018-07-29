@@ -1,0 +1,249 @@
+/*!
+ * kissimmeevill.us main style sheet
+ * http://kissimmeevilla.us
+ * http://villakissimmee.co.uk
+ *
+ * Copyright 2010, Carlos Butler
+ *
+ * Date: Sat Jul 24 10:01:08 2010 +0000
+ */
+ 
+/*
+ * elements on this css follow elements on pages
+ * structure of elements:
+ - dimensions and positions
+ - margins or paddings
+ - borders and colours
+ - fonts and font colours
+ - anything else
+ */
+
+/* start of style elements */
+/* generic css */
+body {
+	background-image:url(http://kissimmeevilla.us/images/statics/mainContent-BG.png);
+	background-repeat:repeat-x;
+	background-color:#454545;
+}
+body, a, img {
+	margin:0px;
+	padding:0px;
+	border:none;
+}
+ul, li {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+/* main's */
+#all {
+	display:none;
+}
+#mustHaveJS {
+	width:300px;
+	height:200px;
+	position:absolute;
+	top:50%;
+	margin-top:-100px;
+	left:50%;
+	margin-left:-150px;
+	padding:10px;
+	background-color:#FEFEFE;
+	font-family:Georgia, "Euphemia UCAS";
+	color:#666;
+}
+#centerise {
+	position:relative;
+}
+#mainContent {
+	width:900px;
+	height:500px;
+	position:absolute;
+	top:50%;
+	margin-top:-225px;
+	left:50%;
+	margin-left:-450px;
+	background-color:#FBFBFB;
+	border:#898989 1px dotted;
+}
+#mainContentBG {
+	width:900px;
+	height:550px;
+	position:absolute;
+	background-repeat:no-repeat;
+	float:left;
+}
+
+/*
+ * elements on this css follow elements on pages
+ * structure of elements:
+ - dimensions and positions
+ - margins or paddings
+ - borders and colours
+ - fonts and font colours
+ - anything else
+ */
+/* link elements */
+#mainContent-linksTopHolder {
+	width:900px;
+	height:50px;
+	position:absolute;
+	top:50%;
+	margin-top:-275px;
+	left:50%;
+	margin-left:-450px;
+}
+#mainContent-linksTopHolderLogo {
+	width:210px;
+	margin-top:10px;
+	margin-left:10px;
+	float:left;
+	font-family:Georgia, "Euphemia UCAS";
+	font-size:30px;
+	font-style:italic;
+	color:#FFF;
+	cursor:default;
+}
+#mainContent-linksTopHolderLogo a:link, #mainContent-linksTopHolderLogo a:visited, #mainContent-linksTopHolderLogo a:hover, #mainContent-linksTopHolderLogo a:active {
+	text-decoration:none;
+	color:#FAFAFA;
+}
+#mainContent-linksTopHolderLinks {
+	/*width:650px;*/
+	height:50px;
+	margin-left:250px;
+}	
+#mainContent-linksTopHolderLinks ul li {
+	margin-top:13px;
+	margin-left:15px;
+	float:left;
+	font-family:Georgia, "Euphemia UCAS";
+	font-size:25px;
+	font-style:italic;
+	cursor:pointer;
+	text-decoration:none;
+	color:#777;
+}
+#mainContent-linksTopHolderLinks a:link, #mainContent-linksTopHolderLinks a:visited, #mainContent-linksTopHolderLinks a:hover, #mainContent-linksTopHolderLinks a:active {
+	text-decoration:none;
+	color:#CACACA;
+}
+
+/*
+ * elements on this css follow elements on pages
+ * structure of elements:
+ - dimensions and positions
+ - margins or paddings
+ - borders and colours
+ - fonts and font colours
+ - anything else
+ */
+/* areas information */
+#areas a {
+	text-decoration:none;
+	color:#FFFFFF;
+}
+#areas a:hover, #areas a:active {
+	text-decoration:underline;
+	cursor:pointer;
+}
+#areas p {
+	font-size:20px;
+	text-decoration:underline;
+}
+.areasInfo {
+	margin-top:20px;
+	list-style:none;
+	margin-left:0px;
+}
+#formEmail input, #formEmail textarea {
+	width:100%;
+}
+#formEmailButton {
+	width:100px;
+}
+
+/*
+ * elements on this css follow elements on pages
+ * structure of elements:
+ - dimensions and positions
+ - margins or paddings
+ - borders and colours
+ - fonts and font colours
+ - anything else
+ */
+/* drop down box */
+/*.dropdown {
+	position:absolute;
+	z-index:10;
+}
+li.headlink {
+	float:left;
+	text-align:center;
+	width:110px;
+}
+li.headlink ul { 
+	display: none;
+}
+li.headlink:hover ul { 
+	display:block;
+}
+li.headlink ul li a {
+	font-size:15px;
+	background:#FBFAFC;
+	width:190px;
+	margin-top:-13px;
+	margin-left:-55px;
+	display:block;
+	padding:4px;
+	border:thin #888 solid;
+	border-bottom:none;
+}
+li.headlink ul li a:hover {
+	background:#EFEFEF;
+}
+#last {
+	border-bottom:thin #888 solid;
+}*/
+
+/*
+ * elements on this css follow elements on pages
+ * structure of elements:
+ - dimensions and positions
+ - margins or paddings
+ - borders and colours
+ - fonts and font colours
+ - anything else
+ */
+/* content elements */
+#content {
+	width:300px;
+	height:500px;
+	position:relative;
+	background-color:#3F3F3F;
+	overflow:hidden;
+	opacity:0.8; /* for every browser except IE */
+	filter:alpha(opacity=80); /* hacky hack hack for crappy IE */
+}
+.section {
+	width:290px;
+	position:relative;
+	font-family:Verdana;
+	font-size:13px;
+	color:#EFEFEF;
+}
+.section .sub {
+	float:left;
+	width:290px;
+	height:550px;
+}
+.section .sub div {
+	width:270px;
+	height:530px;
+	position:relative;
+	margin:10px;
+}
+.sub div a {
+	color:#FFF;
+}

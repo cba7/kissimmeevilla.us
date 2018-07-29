@@ -1,0 +1,144 @@
+<!--
+To anyone viewing this:
+- do not ever use jQuery (outdated JS, heavy, slow)
+- this was written in PHP - needless to say it was my last PHP project (and I didn't know what I was doing in 2010!)
+- this is not how you correctly markup a webpage
+- this is not how you identify elements
+- this is not .... (take your pick)
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>KissimmeeVilla.us</title>
+    <meta name="description" content="Renting out a top end Villa in Kissimmee, California, United States for cheap prices" />
+    <meta name="keywords" content="villa, kissimmee, us, caifornia, sun, holiday, cheap" />
+    <link rel="icon" href="images/statics/favicon.ico" type="image/x-icon" />
+    <link href="styles/kissimmeevilla.us.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery.js" type="text/javascript" language="javascript"></script>
+    <script src="scripts/ScrollTo.jquery.js" type="text/javascript" language="javascript"></script>
+    <script src="scripts/LocalScroll.jquery.js" type="text/javascript" language="javascript"></script>
+    <script src="scripts/kissimmeevilla.us.js" type="text/javascript" language="javascript"></script>
+    <script src="scripts/galleria/galleria.js" type="text/javascript" language="javascript"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-26986663-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div id="all">
+      <div id="mainContent-linksTopHolder">
+        <div id="mainContent-linksTopHolderLogo" onselectstart="return false">
+          <a href="/" target="_self">KissimmeeVilla.</a>
+        </div>
+        <div id="mainContent-linksTopHolderLinks">
+          <ul class="dropdown">
+            <li><a href="#home" id="homeLink" onmouseover="changeLinksHover('#homeLink','#FAFAFA');" onmouseout="changeLinksHover('#homeLink','#CACACA');" onclick="changeLinksBackground(0,'#homeLink','#FAFAFA');">Home</a></li>
+            <li><a href="#areas" id="areasLink" onmouseover="changeLinksHover('#areasLink','#FAFAFA');" onmouseout="changeLinksHover('#areasLink','#CACACA');" onclick="changeLinksBackground(1,'#areasLink','#FAFAFA');">Areas</a>
+            <li><a href="#" id="galleryLink" onmouseover="changeLinksHover('#galleryLink','#FAFAFA');" onmouseout="changeLinksHover('#galleryLink','#CACACA');" onclick="popUpWindow('http://kissimmeevilla.us/gallery','1024','680');">Gallery</a></li>
+            <li><a href="#testimonial" id="testimonialLink" onmouseover="changeLinksHover('#testimonialLink','#FAFAFA');" onmouseout="changeLinksHover('#testimonialLink','#CACACA');" onclick="changeLinksBackground(2,'#testimonialLink','#FAFAFA');">Testimonials</a></li>
+            <li><a href="#contact" id="contactLink" onmouseover="changeLinksHover('#contactLink','#FAFAFA');" onmouseout="changeLinksHover('#contactLink','#CACACA');" onclick="changeLinksBackground(3,'#contactLink','#FAFAFA');">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="mainContent">
+        <div id="mainContentBG">
+          <img id="mainContentBGImg" src="images/mainContent-BG/mainContent-BG0.jpg" width="900" height="500" />
+        </div>
+
+        <div id="content">
+          <div class="section">
+            <ul>
+              <li class="sub" id="home">
+                <div>
+                  Welcome to our luxury, fully air conditioned villa. A picture perfect holiday with all the comforts of home-Simply paradise in Central Florida. The villa includes six bedrooms, three bathrooms, large reception room and a double garage.
+                  <br /><br />
+                  Also it features a private heated swimming pool with Jacuzzi set in a lovely landscaped garden with a barbecue area and a recreation area for the small children.
+                  <br /><br />
+                  The villa is easily accessible from the US 192 highway, just a few minutes drive to Walt Disney World yet very convenient to all attractions in Central Florida and Orlando International Airport.
+                  <br /><br />
+                  There are also a variety of restaurants, shopping malls and sporting activities such as fishing and golf courses which are all close by.
+                </div>
+              </li>
+
+              <li class="sub" id="areas">
+                <div id="areasSections">
+                  <p>Ground Floor</p>
+                  <a onclick="changeBackground(8);areasInfo('double','en');">Queen room Ground Floor</a><br />
+                  <a onclick="changeBackground(10);areasInfo('twinground','en');">Twin room Ground Floor</a><br />
+                  <a onclick="changeBackground(12);areasInfo('living','en');">Lounge</a><br />
+                  <a onclick="changeBackground(11);areasInfo('kitchen','en');">Kitchen</a><br />
+                  <a onclick="changeBackground(14);areasInfo('dinning','en');">Dining room</a><br />
+                  <a onclick="changeBackground(1);areasInfo('swimming','en');">Swimming pool</a><br /><!-- using original and only swimming pool image -->
+                  <br />
+                  <p>First Floor</p>
+                  <a onclick="changeBackground(6);areasInfo('master','en');">Master room</a><br />
+                  <a onclick="changeBackground(7);areasInfo('queen','en');">Queen room</a><br />
+                  <a onclick="changeBackground(15);areasInfo('queen','en');">Double room</a><br />
+                  <a onclick="changeBackground(9);areasInfo('twin','en');">Twin room</a><br />
+                  <a onclick="changeBackground(13);areasInfo('landing','en');">Landing</a><br />
+                  <div class="inner areasInfo"></div>
+                </div>
+              </li>
+
+              <li class="sub" id="testimonial">
+                <div>
+                  "My partner and some friends organised a New Year holiday at the beginning of 2010. We were delighted when we arrived to our luxury villa. The villa is a truly American property in peaceful surroundings. The house was well equipped with spacious rooms, several bathrooms and of course a swimming pool/jacuzzi. Disney World and the other parks were just a 20-minute drive away as well as being surrounded by a huge range of restaurants. We recommend a visit to one of the best local stake houses called 'The Kissimmee Steak House', which served us a generous steak, picked by us! Although we don't have children yet, we noticed the villa is very child friendly and it even had a courtesy pushchair. Being there at the villa really felt like a home away from home! We would have no hesitation in recommending this villa."
+                  <br />
+                  - Mariela from Surrey, UK
+                  <br /><br />
+                  <a href="#testimonial2">Next testimonials</a>
+                </div>
+              </li>
+
+              <li class="sub" id="testimonial2">
+                <div>
+                  <a href="#testimonial">Previous testimonials</a>
+                  <br /><br />
+                  "My whole family just loved this place and didn't want to leave - I could live in that villa forever! So huge and comfortable and in a convenient and peaceful setting. The neighbours even invited us to their Independence barbeque! The villa is well equipped with everything you need and enough space for everyone. We loved lazing around the pool or lounge in between the hectic shopping and sightseeing. I thoroughly recommend it."
+                  <br />
+                  - Tracey from London, UK
+                  <br /><br />
+                  "We visited Kissimmee with my parents who are retired. They find it difficult to enjoy themselves but in this villa they loosened up and were able to unwind. The villa was very comfortable with all the amenities you could want. In the mornings the sun coming through the open plan windows always put a smile on my face. We all really enjoyed the break, so much so that we've stayed at the villa three times. A definite must."
+                  <br />
+                  - Paul from Essex, UK
+                </div>
+              </li>
+
+              <li class="sub" id="contact">
+                <div>
+                  <p>
+                    We hope you like our villa and if you would like to contact us for more information and preferential pricing please fill email us at
+                    <br>
+                    <br>
+                    <a href="mailto:hruprai@email.com?subject=Kissimmee%20Villa%20booking%20information">hruprai@email.com</a>
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div><!-- end #section -->
+        </div><!-- end #content -->
+      </div><!-- end #mainContent -->
+    </div><!-- end #all -->
+
+    <noscript>
+      <div id="mustHaveJS">You must have JavaScript enabled for this website to function. Please enable it now.</div>
+    </noscript>
+  </body>
+
+  <script type="text/javascript" language="javascript">
+    fadeInItem('#all', 700);
+    setTimeout("$('#homeLink').animate({ color:'#FAFAFA' }, 500)", 750);
+  </script>
+</html>
